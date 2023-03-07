@@ -1,0 +1,28 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+   <div >
+    <div className="header-1">
+  <div className='subh-1'> <img src="	https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"></img></div>   
+  <button className="btn-1">LOGIN</button>
+    <button className="btn-1">CART</button>
+    </div>
+
+
+    <div className="c-1">
+   <div className="c-2"> <img src="https://rukminim1.flixcart.com/image/832/832/ju79hu80/hair-dryer-refurbished/c/p/e/c-hp8100-46-philips-original-imaf8dvrv4zekkgt.jpeg?q=70"></img>
+   <div className="c-3">$129</div>
+   </div>
+   <div className="c-2"> <img src="https://rukminim1.flixcart.com/image/832/832/ju79hu80/hair-dryer-refurbished/c/p/e/c-hp8100-46-philips-original-imaf8dvrv4zekkgt.jpeg?q=70"></img>
+   <div>$129</div></div>
+   <div className="c-2"> <img src="https://rukminim1.flixcart.com/image/832/832/ju79hu80/hair-dryer-refurbished/c/p/e/c-hp8100-46-philips-original-imaf8dvrv4zekkgt.jpeg?q=70"></img></div>
+   <div className="c-2"> <img src="https://rukminim1.flixcart.com/image/832/832/ju79hu80/hair-dryer-refurbished/c/p/e/c-hp8100-46-philips-original-imaf8dvrv4zekkgt.jpeg?q=70"></img></div>
+   <div className="c-2"> <img src="https://rukminim1.flixcart.com/image/832/832/ju79hu80/hair-dryer-refurbished/c/p/e/c-hp8100-46-philips-original-imaf8dvrv4zekkgt.jpeg?q=70"></img></div>
+    </div>
+   </div>
+  );
+}
+
+export default App;
