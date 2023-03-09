@@ -3590,30 +3590,5 @@
       "category": "mobile"
     }
   ],
-  "cart": [
-    {
-      "price": "42,999",
-      "pquantity": 7,
-      "pid": "apple11",
-      "id": 1
-    },
-    {
-      "price": "1,39,900",
-      "pquantity": 1,
-      "pid": "apple34",
-      "id": 2
-    },
-    {
-      "price": "69,900",
-      "pquantity": 1,
-      "pid": "apple17",
-      "id": 3
-    },
-    {
-      "price": "64,999",
-      "pquantity": 3,
-      "pid": "apple22",
-      "id": 5
-    }
-  ]
+  "cart": []
 }

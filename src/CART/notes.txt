@@ -1,0 +1,70 @@
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
+import { mycontext } from "../App";
+import { getCartDetails, getProductDetails } from "../DATA/Api";
+
+export const Cart = () => {
+  const [productDetails, setProductDetails, cartProducts, setCartProducts] =
+    useContext(mycontext);
+  const [allDetails, setAllDetails] = useState([]);
+  useEffect(() => {
+    const cartdata = axios.get("http://localhost:3000/cart");
+    cartdata.then((res) => setCartProducts(res.data));
+    const productsdata = axios.get("http://localhost:3000/products");
+    productsdata.then((res) => setProductDetails(res.data));
+  }, []);
+  var a = [];
+  const h1 = (s, pquantity) => {
+    s.then((res) => {
+      res.data["pquantity"] = pquantity;
+      axios.post("http://localhost:3000/cartfulldata", res.data);
+      console.log(a);
+    });
+  };
+  const h = async () => {
+    cartProducts.map((i) => {
+      h1(axios.get(`http://localhost:3000/products/${i.pid}`), i.pquantity);
+
+    });
+  };
+
+  useEffect(() => {
+    h();
+  }, [cartProducts]);
+
+const addAllDetails=() =>{
+  axios
+  .get("http://localhost:3000/cartfulldata")
+  .then((res) => setAllDetails(res.data));
+}
+
+
+  useEffect(() => {
+   addAllDetails()
+  },[]);
+
+  const removeItem = (data) => {
+    axios.delete(`http://localhost:3000/cartfulldata/${data.id}`);
+    axios.delete(`http://localhost:3000/cart/?pid=${data.id}`)
+  };
+
+  return (
+    <div>
+      {allDetails.map((i) => (
+        <div>
+          <div>
+            <img src={i.images[0]}></img>
+          </div>
+          <div>{i.mrp}</div>
+          <button
+            onClick={() => {
+              removeItem(i);
+            }}
+          >
+            remove
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};

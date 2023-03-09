@@ -4,53 +4,93 @@ import { mycontext } from "../App";
 import { getCartDetails, getProductDetails } from "../DATA/Api";
 
 export const Cart = () => {
-  const [productDetails, setProductDetails, cartProducts, setCartProducts] =
-    useContext(mycontext);
   const [allDetails, setAllDetails] = useState([]);
   useEffect(() => {
-    const cartdata = axios.get("http://localhost:3000/cart");
-    cartdata.then((res) => setCartProducts(res.data));
-    const productsdata = axios.get("http://localhost:3000/products");
-    productsdata.then((res) => setProductDetails(res.data));
+    storeAllDetails();
   }, []);
-
-  const h1 = (s,pquantity) => {
-    var a=[]
-    s.then((res) => {
-      console.log(pquantity)
-      console.log(res.data);
-     res.data['pquantity']=pquantity 
-     a.push(res.data)
-    }
-    
-    );
+  const storeAllDetails = () => {
+    axios
+      .get("http://localhost:3000/cart/")
+      .then((res) => setAllDetails(res.data));
   };
-  const h = async () => {
-    cartProducts.map((i) => {
-      h1(axios.get(`http://localhost:3000/products/${i.pid}`),i.pquantity);
+  const removeItem = (data) => {
+    axios.delete(`http://localhost:3000/cart/${data.id}`);
+    storeAllDetails();
+  };
+
+  const increasequantity = (data) => {
+    console.log(data);
+    axios.put(`http://localhost:3000/cart/${data.id}`, {
+      ...data,
+      pquantity: data.pquantity + 1,
     });
+    storeAllDetails();
   };
-  useEffect(()=>{
-    h()
-  })
-
-  // const helo = () => {
-  //   cartProducts.map((i) => {
-  //     const a = axios.get(`http://localhost:3000/products/${i.pid}`);
-  //     a.then((res) => {
-  //       console.log(res.data);
-  //       res.data["pquantity"] = i.pquantity;
-  //       console.log(res.data);
-  //       setAllDetails(res.data);
-  //     });
-  //   });
-  // };
+  const decreasequantity = (data) => {
+    if (data.pquantity - 1 == 0) {
+      removeItem(data);
+    } else {
+      axios.put(`http://localhost:3000/cart/${data.id}`, {
+        ...data,
+        pquantity: data.pquantity - 1,
+      });
+      storeAllDetails();
+    }
+  };
 
   return (
-    <div>
-  
+    <div className="ctn-1">
+      {allDetails.map((i) => (
+        <div className="ctn-2">
+          <div>
+            <img src={i.images[0]}></img>
+          </div>
+          <div>{i.mrp}</div>
+          <div>
+            <span>
+              <button
+                onClick={() => {
+                  decreasequantity(i);
+                }}
+              >
+                -
+              </button>
+            </span>
+            {i.pquantity}
 
-      
+            {i.pquantity == 5 ? (
+              <span>
+                <button
+                  disabled={true}
+                  onClick={() => {
+                    increasequantity(i);
+                  }}
+                >
+                  +
+                </button>
+              </span>
+            ) : (
+              <span>
+                <button
+                  disabled={false}
+                  onClick={() => {
+                    increasequantity(i);
+                  }}
+                >
+                  +
+                </button>
+              </span>
+            )}
+          </div>
+          <button
+            onClick={() => {
+              removeItem(i);
+            }}
+          >
+            remove
+          </button>
+        </div>
+      ))}
     </div>
   );
 };

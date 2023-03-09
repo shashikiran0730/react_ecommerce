@@ -20,6 +20,7 @@ export const Home = () => {
 
   const addToCart = async (data) => {
     const res = await axios.get(`http://localhost:3000/cart/?pid=${data.id}`);
+    console.log(res.data)
     const a = {
       ...res.data,
       pquantity: res.data.quantity + 100,
@@ -36,7 +37,9 @@ export const Home = () => {
         pquantity: res.data[0].pquantity + 1,
       });
     } else {
+      console.log(data)
       const d = {
+        ...data,
         price: data.price,
         pquantity: 1,
         pid: data.id,
