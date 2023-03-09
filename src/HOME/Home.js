@@ -7,7 +7,6 @@ export const Home = () => {
   const brand = useRef();
   const [productDetails, setProductDetails, cartProducts, setCartProducts] =
     useContext(mycontext);
-  const [isItemAvailable, setIsItemAvailable] = useState(false);
   useEffect(() => {
     axios.get("http://localhost:3000/products").then((res) => {
       console.log(res.data);
@@ -19,10 +18,31 @@ export const Home = () => {
     });
   }, []);
 
-  const addToCart = (data) => {
-    let len = cartProducts.filter((i) => i.pid == data.id).length;
-    if (len == 0) {
-     
+  const addToCart = async (data) => {
+    const res = await axios.get(`http://localhost:3000/cart/?pid=${data.id}`);
+    const a = {
+      ...res.data,
+      pquantity: res.data.quantity + 100,
+    };
+    const d = {
+      price: data.price,
+      pquantity: 1,
+      pid: data.id,
+    };
+
+    if (res.data != 0) {
+      axios.put(`http://localhost:3000/cart/${res.data[0].id}`, {
+        ...res.data[0],
+        pquantity: res.data[0].pquantity + 1,
+      });
+    } else {
+      const d = {
+        price: data.price,
+        pquantity: 1,
+        pid: data.id,
+      };
+      axios.post("http://localhost:3000/cart", d);
+    }
   };
   const filterBrand = () => {
     if (brand.current.value != "brand") {
