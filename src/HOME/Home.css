@@ -3,16 +3,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+   margin-top: 2vw;
 }
+
 
 .ctn-2 img{
     height: 20vw;
     width: 12vw;
+
+}
+.ctn-2 img:hover{
+height: 23vw;
+width: 14vw;
 }
 .ctn-2{
     border: 0.1vw solid black;
     border-radius: 2vw;
     margin: 2vw;
     padding: 12px;
+}
+
+.s-ctn-1{
+    margin-top: 85px;
+    padding: 0.5vw;
+    margin-left: 90vw;
 }

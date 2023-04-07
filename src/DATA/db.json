@@ -3590,5 +3590,102 @@
       "category": "mobile"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "_id": "61d96496ea5fe669455cac26",
+      "name": "APPLE iPhone 13 Mini (Starlight, 128 GB)",
+      "brand": "APPLE",
+      "quantity": "5",
+      "id": "apple17",
+      "price": "69,900",
+      "mrp": "69,900",
+      "images": [
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/z/k/a/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6dzauezvs.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/a/j/u/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6swvmsbnn.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/o/m/7/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6r5bh7ayc.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/o/r/y/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6kyz4kyx6.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/k/i/o/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6ccgazsuz.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/s/e/m/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6jexhhbx8.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/g/6/s/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6pbxnhjxs.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/2/0/y/iphone-13-mini-mlk93hn-a-apple-original-imag6vp6h4gvkhhv.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/0/n/z/iphone-13-mini-mlkc3hn-a-apple-original-imag6vp6h9zjmy5a.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/ktketu80/mobile/k/1/e/iphone-13-mini-mlk93hn-a-apple-original-imag6vp6jvaxmuhk.jpeg?q=70"
+      ],
+      "specifications": [
+        "128 GB ROM",
+        "13.72 cm (5.4 inch) Super Retina XDR Display",
+        "12MP + 12MP | 12MP Front Camera",
+        "A15 Bionic Chip Processor"
+      ],
+      "category": "mobile",
+      "pquantity": 1,
+      "pid": "apple17"
+    },
+    {
+      "_id": "61d96496ea5fe669455cac17",
+      "name": "APPLE iPhone SE (Black, 64 GB)",
+      "brand": "APPLE",
+      "quantity": "5",
+      "id": "apple2",
+      "price": "27,999",
+      "mrp": "₹39,900",
+      "images": [
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjfehbbqgb.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjfehbbqgb.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjgcphy69z.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/kmp7ngw0/mobile/x/e/b/iphone-se-mhgp3hn-a-apple-original-imagfj4cqstgepcp.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjdkt4ef7w.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjvegg9wqa.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjzhpkwuxp.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjf9fhfcjt.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpj393yex36.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/p/z/q/apple-iphone-se-mxd02hn-a-original-imafrcpjyscxm8fv.jpeg?q=70"
+      ],
+      "specifications": [
+        "64 GB ROM",
+        "11.94 cm (4.7 inch) Retina HD Display",
+        "12MP Rear Camera | 7MP Front Camera",
+        "A13 Bionic Chip with 3rd Gen Neural Engine Processor",
+        "Water and Dust Resistant (1 meter for Upto 30 minutes, IP67)",
+        "Fast Charge Capable",
+        "Wireless charging (Works with Qi Chargers | Qi Chargers are Sold Separately"
+      ],
+      "category": "mobile",
+      "pquantity": 3,
+      "pid": "apple2"
+    },
+    {
+      "_id": "61d96496ea5fe669455cac1d",
+      "name": "APPLE iPhone SE (Red, 128 GB)",
+      "brand": "APPLE",
+      "quantity": "5",
+      "id": "apple8",
+      "price": "32,999",
+      "mrp": "₹44,900",
+      "images": [
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfxhcrpsb.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfxhcrpsb.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmzzajg3zg.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/kmp7ngw0/mobile/d/h/n/iphone-se-mhgv3hn-a-apple-original-imagfj4ckfdpffch.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmh5hgugse.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmyhg8h82e.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmn2873425.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmhkqzv7xx.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmqesyfhhy.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/350/350/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfh4zznmq.jpeg?q=70"
+      ],
+      "specifications": [
+        "128 GB ROM",
+        "11.94 cm (4.7 inch) Retina HD Display",
+        "12MP Rear Camera | 7MP Front Camera",
+        "A13 Bionic Chip with 3rd Gen Neural Engine Processor",
+        "Water and Dust Resistant (1 meter for Upto 30 minutes, IP67)",
+        "Fast Charge Capable",
+        "Wireless charging (Works with Qi Chargers | Qi Chargers are Sold Separately"
+      ],
+      "category": "mobile",
+      "pquantity": 1,
+      "pid": "apple8"
+    }
+  ]
 }
